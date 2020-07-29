@@ -1,4 +1,6 @@
 import React from 'react';
+import Image from './Components/Image';
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -12,8 +14,12 @@ function App() {
       <div>
         
       </div>
+
+      <Image />
+
+    
     </Router>
   );
-}
+} 
 
 export default App;
