@@ -10,23 +10,53 @@ import Login from './Components/Login';
 
 function App() {
   return (
-    <form>
-  <div class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"></input>
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    <Router>
+
+{/* This is the nav bar */}
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <Link class="nav-link" to="/Login">Home </Link>
+      </li>
+      <li class="nav-item">
+        <Link class="nav-link" to="#">Link</Link>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <Link class="dropdown-item" href="#">Action</Link>
+          <Link class="dropdown-item" href="#">Another action</Link>
+          <div class="dropdown-divider"></div>
+          <Link class="dropdown-item" href="#">Something else here</Link>
+        </div>
+      </li>
+      <li class="nav-item">
+        <Link class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</Link>
+      </li>
+    </ul>
+    <a class="navbar-brand" href="#">Navi Mei</a>
+    <form class="form-inline my-2 my-lg-0">
+    <img src = {require("./photos/logo.png")} alt=" " width="130"/>
+    </form>
   </div>
-  <div class="form-group">
-    <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1"></input>
-  </div>
-  <div class="form-group form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1"></input>
-    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-  </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
-</form>
-    
+</nav>
+ 
+<Switch>
+          <Route path ="/Login" >
+            <Login />
+            </Route>
+            
+        </Switch>
+    </Router>
+
   );
 } 
 
