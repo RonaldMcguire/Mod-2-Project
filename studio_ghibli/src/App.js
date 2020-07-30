@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from './Components/Image';
+
 
 import {
   BrowserRouter as Router,
@@ -12,13 +12,18 @@ function App() {
   return (
     <Router>
       <div>
-        
-      </div>
+        <section>
+          <header>
+            <img src = {require("./photos/eye.jpeg")} alt=" "/>
+          </header>
+        </section>
 
-      <Image />
+      </div>
+ 
 
     
     </Router>
+
   );
 } 
 
