@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import axios from 'axios';
 const BASE_URL = "https://anime-chan.herokuapp.com/api/quotes/random";
 import '../Components/home.css'
@@ -7,10 +7,14 @@ class home extends React.Component{
     constructor(props) {
         super(props);
         this.state = {
-            items: []
+            items: [],
         }
     }
+}
+componentDidMount() {
 
+
+    
 }
 
 const Home = () => {
