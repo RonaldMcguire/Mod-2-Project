@@ -14,6 +14,7 @@ class home extends React.Component{
     componentDidMount(); {
             axios.get(`${BASE_URL}`)
             .then()
+            .catch()
 
 
 }
