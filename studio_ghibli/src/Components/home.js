@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+const BASE_URL = 
 import '../Components/home.css'
 
 const MainPage = () => {
