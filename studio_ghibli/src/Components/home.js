@@ -13,7 +13,7 @@ class home extends React.Component{
 }
     componentDidMount(); {
             axios.get(`${BASE_URL}`)
-            .then(res => this.ListeningStateChangedEvent({}))
+            .then(res => this.ListeningStateChangedEvent({ info: res.data }))
             .catch(e => console.error(e.message));
 
 
