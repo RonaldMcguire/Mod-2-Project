@@ -5,8 +5,8 @@ import '../Components/home.css'
 class home extends React.Component{
 
     constructor(props) {
+        super(props);
 
-        }
     }
 
 }
