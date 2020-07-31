@@ -4,9 +4,11 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  Link,
+  Redirect
 } from "react-router-dom";
 import Login from './Components/Login';
+import Home from './Components/home';
 
 function App() {
   return (
@@ -22,10 +24,10 @@ function App() {
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <Link class="nav-link" to="/Login">Home </Link>
+        <Link class="nav-link" to="/">Home</Link>
       </li>
       <li class="nav-item">
-        <Link class="nav-link" to="#">Link</Link>
+        <Link class="nav-link" to="/Login">Login</Link>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -48,16 +50,24 @@ function App() {
     </form>
   </div>
 </nav>
- 
+
 <Switch>
+
+<Route exact path = "/" component = {Home} />
+<Route path = "/Login" component = {Login} />
+{/* <Route path ="/home" component = {Home} / > */}
+  
+</Switch>
+</Router>
+
+
+  );
+} 
+{/* <Switch>
           <Route path ="/Login" >
             <Login />
             </Route>
             
-        </Switch>
-    </Router>
-
-  );
-} 
-
+</Switch>
+    </Router> */}
 export default App;
