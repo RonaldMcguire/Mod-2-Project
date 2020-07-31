@@ -11,10 +11,10 @@ class home extends React.Component{
         }
     }
 }
-componentDidMount() {
+    componentDidMount(); {
+            axios.get(`${BASE_URL}`)
 
 
-    
 }
 
 const Home = () => {
