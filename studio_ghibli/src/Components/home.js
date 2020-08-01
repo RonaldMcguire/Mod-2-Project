@@ -15,8 +15,10 @@ class home extends React.Component{
             axios.get(`${BASE_URL}`)
             .then(res => this.ListeningStateChangedEvent({ info: res.data.results }))
             .catch(e => console.error(e.message));
+}
 
-
+render(){
+    
 }
 
 const Home = () => {
