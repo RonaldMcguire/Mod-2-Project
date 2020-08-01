@@ -40,6 +40,12 @@ constructor() {
 
 }
 
+  componentDidMount(){
+
+    this.getinfo();
+    this.getCharacter();
+
+  }
 
 
 export default Home;
