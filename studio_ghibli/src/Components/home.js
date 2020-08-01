@@ -5,8 +5,8 @@ import '../Components/home.css';
 const BASE_URL = "https://anime-chan.herokuapp.com/api/quotes/random";
 
 class Home extends React.Component{
-constructor() {
-    super();
+constructor(props) {
+    super(props);
     this.state = {
       info: [],
       finalQuote: " ",
