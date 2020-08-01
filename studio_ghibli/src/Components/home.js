@@ -18,7 +18,10 @@ class home extends React.Component{
 }
 
 render(){
-    
+    return(
+
+    );
+
 }
 
 const Home = () => {
