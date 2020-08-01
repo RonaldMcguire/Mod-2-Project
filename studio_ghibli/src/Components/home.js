@@ -67,7 +67,7 @@ render() {
 
                 <div class="bottom-left">
 
-                    
+                    <h5>{ this.state.finalQuote } ~ {this.state.character}</h5>
                           
                 </div>
                 
