@@ -1,54 +1,32 @@
-import React, { Component } from 'react';
+import React from 'react';
 import axios from 'axios';
+import '../Components/home.css';
+
 const BASE_URL = "https://anime-chan.herokuapp.com/api/quotes/random";
-import '../Components/home.css'
-class home extends React.Component{
 
-    constructor(props) {
-        super(props);
-        this.state = {
-            items: [],
-        }
+class Home extends React.Component{
+constructor() {
+    super();
+    this.state = {
+      info: [],
+      finalQuote: " ",
+      character: " ",
     }
-}
-    componentDidMount(); {
-            axios.get(`${BASE_URL}`)
-            .then(res => this.ListeningStateChangedEvent({ info: res.data.results }))
-            .catch(e => console.error(e.message));
-}
+  }
 
-render(){
-    return(
+  async getinfo(){
+      
+          const firstRes = await axios.get(`${BASE_URL}`);
+          const randomQuote = firstRes.data[0].quote
+          console.log(randomQuote);
+          this.setState({
 
-    );
+            finalQuote:randomQuote
 
-}
+          })
+      
+  }
 
-const Home = () => {
-    return(
-        <div>
-    <img src ={require("../photos/background.jpg")} alt = " " />  
-            <div class="container">
-             
-            
-
-            <div class="bottom-left">
-
-                Anime quotes will go here within the API
-                
-            </div>
-                
-            
-
-</div>
-
-
-
-        </div>
-
-
-    
-    );
-};
+ 
 
 export default Home;

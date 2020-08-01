@@ -6,6 +6,15 @@
 
   .bottom-left {
     position: absolute;
-    bottom: 100px;
-    left: -100px;
+    top: 600px;
+    left: -10px;
+  }
+
+  .fixNav{
+
+
+      position: fixed;     
+      text-align: center;
+      width: 100%;
+      height: 200px;
   }
