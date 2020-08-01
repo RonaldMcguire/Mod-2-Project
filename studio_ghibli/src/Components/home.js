@@ -54,7 +54,16 @@ constructor() {
 
 render() {
     return(
+        <div>
+        <div class = "fixNav">
 
+            <img src ={require("../photos/background.jpg")} alt = " "/> 
+            </div> 
+
+
+
+
+        </div>    
 
         
     
