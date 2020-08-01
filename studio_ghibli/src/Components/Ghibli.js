@@ -8,7 +8,7 @@ class Ghibli extends React.Component{
     constructor(props) {
         super(props);
         this.state = {
- 
+            info: [],
         }
       }
 
