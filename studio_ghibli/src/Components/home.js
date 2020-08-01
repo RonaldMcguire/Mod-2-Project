@@ -27,6 +27,19 @@ constructor() {
       
   }
 
- 
+  async getCharacter(){
+      
+    const firstRes = await axios.get(`${BASE_URL}`);
+    const animeC = firstRes.data[0].character
+    console.log(animeC);
+    this.setState({
+
+        character: animeC
+
+    })
+
+}
+
+
 
 export default Home;
