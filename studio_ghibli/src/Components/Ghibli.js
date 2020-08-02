@@ -36,3 +36,9 @@ class Ghibli extends React.Component{
 
       componentDidMount(){
 
+        this.gettitle();
+        
+    
+      }
+
+ 
