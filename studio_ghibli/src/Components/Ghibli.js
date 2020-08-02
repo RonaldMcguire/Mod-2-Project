@@ -44,3 +44,4 @@ class Ghibli extends React.Component{
       render(){
           return(
               <div>
+          <h5>{ this.state.title } </h5>
