@@ -17,6 +17,7 @@ constructor(props) {
   async getinfo(){
       
           const firstRes = await axios.get(`${BASE_URL}`);
+          
           const randomQuote = firstRes.data[0].quote
           console.log(randomQuote);
           this.setState({

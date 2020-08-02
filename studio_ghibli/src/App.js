@@ -9,6 +9,7 @@ import {
 } from "react-router-dom";
 import Login from './Components/Login';
 import Home from './Components/Home';
+import Ghibli from './Components/Ghibli';
 
 function App() {
   return (
@@ -34,7 +35,7 @@ function App() {
           Dropdown
         </a>
         <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-          <Link className="dropdown-item" to="/ghibli">Studio Ghibli Movies</Link>
+          <Link className="dropdown-item" to="/Ghibli">Studio Ghibli Movies</Link>
           <Link className="dropdown-item" href="#">Another action</Link>
           <div className="dropdown-divider"></div>
           <Link className="dropdown-item" href="#">Navi Mei</Link>
@@ -49,9 +50,10 @@ function App() {
 </nav>
 
 <Switch>
+<Route path = "/Ghibli" component = { Ghibli } />
+<Route exact path = "/" component = { Home } />
+<Route path = "/Login" component = { Login } />
 
-<Route exact path = "/" component = {Home} />
-<Route path = "/Login" component = {Login} />
 {/* <Route path ="/home" component = {Home} / > */}
   
 </Switch>
