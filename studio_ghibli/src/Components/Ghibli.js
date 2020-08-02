@@ -54,3 +54,4 @@ class Ghibli extends React.Component{
 
 }
 
+export default Ghibli;
