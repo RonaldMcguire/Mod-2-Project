@@ -23,3 +23,11 @@ class Ghibli extends React.Component{
 
         const dir = summon.data[0].director
         console.log(dir)
+        this.setState({
+            director: dir,
+
+            title: final
+        })
+        
+      }
+
