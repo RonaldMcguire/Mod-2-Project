@@ -41,4 +41,5 @@ class Ghibli extends React.Component{
     
       }
 
- 
+      render(){
+          return(
