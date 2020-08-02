@@ -19,4 +19,6 @@ class Ghibli extends React.Component{
         const summon = await axios.get(`${ghibli_URL}`);
         
         const final = summon.data[0].title
+        console.log(final);
+
  
