@@ -15,4 +15,9 @@ class Ghibli extends React.Component{
         }
       }
 
+      async getinfo(){
+          
+      }
+
+
 }
