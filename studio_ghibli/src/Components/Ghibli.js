@@ -45,3 +45,4 @@ class Ghibli extends React.Component{
           return(
               <div>
           <h5>{ this.state.title } </h5>
+          <h5>directed by: { this.state.director }</h5>
