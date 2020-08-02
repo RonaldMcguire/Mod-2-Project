@@ -21,4 +21,4 @@ class Ghibli extends React.Component{
         const final = summon.data[0].title
         console.log(final);
 
- 
+        const dir = summon.data[0].director
