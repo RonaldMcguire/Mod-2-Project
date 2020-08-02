@@ -31,3 +31,8 @@ class Ghibli extends React.Component{
         
       }
 
+
+
+
+      componentDidMount(){
+
